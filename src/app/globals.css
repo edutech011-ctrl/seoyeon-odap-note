@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  --bg-beige: #F5EFE0;
+  --caramel-light: #EDD9B5;
+  --caramel-mid: #C4956A;
+  --caramel-main: #9B7040;
+  --caramel-dark: #7A5530;
+}
+
+body {
+  font-family: 'Jua', 'Noto Sans KR', sans-serif;
+  background-color: #F5EFE0;
+  min-height: 100vh;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes bounce-in {
+  0% { transform: scale(0.8); opacity: 0; }
+  60% { transform: scale(1.05); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.float-anim {
+  animation: float 3s ease-in-out infinite;
+}
+
+.bounce-in {
+  animation: bounce-in 0.4s ease-out forwards;
+}
