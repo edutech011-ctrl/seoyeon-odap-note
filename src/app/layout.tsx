@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "서연이의 오답노트 🐹",
+  title: "서연이의 오답노트 🐱",
   description: "AI가 만들어주는 나만의 오답노트",
 };
 

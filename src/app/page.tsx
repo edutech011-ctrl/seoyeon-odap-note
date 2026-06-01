@@ -60,7 +60,7 @@ export default function Home() {
   };
 
   const handleGenerate = async () => {
-    if (!subject) { setError("과목을 선택해주세요! 🐹"); return; }
+    if (!subject) { setError("과목을 선택해주세요! 🐱"); return; }
     if (!imageFile) { setError("문제 사진을 업로드해주세요! 📸"); return; }
     setError("");
     setLoading(true);
@@ -98,7 +98,7 @@ export default function Home() {
         {["10%,5%","85%,8%","5%,50%","92%,45%","8%,90%","88%,88%"].map((pos, i) => (
           <span key={i} className="absolute text-4xl opacity-10 float-anim"
             style={{ left: pos.split(",")[0], top: pos.split(",")[1], animationDelay: `${i * 0.5}s` }}>
-            🐹
+            🐱
           </span>
         ))}
       </div>
@@ -106,7 +106,7 @@ export default function Home() {
       <div className="relative max-w-2xl mx-auto" style={{ zIndex: 1 }}>
         {/* 헤더 */}
         <div className="text-center mb-8">
-          <div className="text-5xl mb-3 float-anim">🐹</div>
+          <div className="text-5xl mb-3 float-anim">🐱</div>
           <h1 className="text-3xl font-bold mb-1" style={{ color: "#7A5530" }}>
             서연이의 오답노트
           </h1>
@@ -154,7 +154,7 @@ export default function Home() {
                 <img src={imagePreview} alt="업로드된 문제" className="max-h-64 object-contain rounded-xl" />
               ) : (
                 <div className="text-center p-8">
-                  <div className="text-4xl mb-2">🐹</div>
+                  <div className="text-4xl mb-2">🐱</div>
                   <p className="font-bold" style={{ color: "#9B7040" }}>클릭해서 사진 올리기</p>
                   <p className="text-xs mt-1" style={{ color: "#C4956A" }}>JPG, PNG, WEBP 가능</p>
                 </div>
@@ -213,10 +213,10 @@ export default function Home() {
           >
             {loading ? (
               <span className="flex items-center justify-center gap-2">
-                <span className="inline-block animate-spin">🐹</span> AI가 문제 만드는 중...
+                <span className="inline-block animate-spin">🐱</span> AI가 문제 만드는 중...
               </span>
             ) : (
-              "🐹 문제 생성하기"
+              "🐱 문제 생성하기"
             )}
           </button>
         </div>
@@ -322,7 +322,7 @@ export default function Home() {
 
         {/* 푸터 */}
         <p className="text-center text-xs mt-8 pb-4" style={{ color: "#C4956A" }}>
-          🐹 서연이의 오답노트 · AI가 만들어주는 맞춤 문제
+          🐱 서연이의 오답노트 · AI가 만들어주는 맞춤 문제
         </p>
       </div>
     </main>

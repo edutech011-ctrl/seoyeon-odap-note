@@ -4,10 +4,10 @@
 
 :root {
   --bg-beige: #F5EFE0;
-  --caramel-light: #EDD9B5;
-  --caramel-mid: #C4956A;
-  --caramel-main: #9B7040;
-  --caramel-dark: #7A5530;
+  --cat-light: #E8E0D5;
+  --cat-mid: #B8A898;
+  --cat-main: #8B7355;
+  --cat-dark: #5C4A35;
 }
 
 body {
